@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+// Dynamic variables (change on the fly using css variables)
+:root {
+  // Fonts
+  --nunito: "Nunito Sans", sans-serif;
+
+  // ELEVATION level1 small box-shadow - level4 heavier box-shadow
+  --level1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --level5: 0 3px 6px rgba(0, 0, 0, 0.1);
+
+  // colors
+  --veryLightGray: #dedede;
+  --lightGray: #f6f7fb;
+  --mediumGray: #6c6c6c;
+  --veryDarkGray: #1d1d1d;
+  --lightBlue: #6685ff;
+  --strongBlue: #2d5bc4;
+  --veryLightBlue: #e6f2ff;
+  --mediumightBlue: #fafbfd;
+
+  // light theme
+  --lightBG: var(--lightGray);
+  --lightBGTransparency: #f6f7fbaa;
+  --grayText: var(--mediumGray);
+  --modalBackgroundColor: #1c2239dd; // dark blueish purple
+  --BGDarkNoOpacity: #1c2239;
+  --modalTextColor: white;
+  // --modalTextColor__hover: white;
+  --modalTextBackgroundColor__hover: #696f86dd; // 20% lighter than modal background color
+  --modalCloseXColor: #61666d;
+
+  --pageBackgroundColor: white; // white
+  --transparentWhite: #ffffffcc;
+  --inputbackgroundColor: #f6f7fb; // off white
+  --pageTextColor: #323232; // off white
+  --title: #464646; // gray title
+  --lightGrayBG: #f6f7fb;
+  --F6White: #ffffff;
+  --successColorTPI: #4fb222;
+  --terminateColorTPI: #ef0f29;
+  // --subtitle: #b2b2b2;
+  --helperText: #9d9b9b;
+  --subtitle: #6c6c6c;
+  --OneLinkColor: #2196f3;
+  --logoutBlue: #bfe7ff;
+  --errorColor: #ff6b6b;
+  --successColor: #1da177;
+  --logoBlueBox: #003cbb;
+  --aboutDarkBG: #33374d;
+  --forgetPasswordError: #efed69;
+
+  --accentColor1: #afc0ff; // lilac (purple)
+  --accentColor2: #a7df9c;
+  --accentColor3: #ffd5b6;
+  --accentColor4: #bfe7ff;
+
+  // For all borders in light/white background, and 1px thick (Exclude Quick
+  // Upload Border)
+  --borderLightColor: #cbcbcb;
+  // For all borders in dark background , tpx thick border
+  --borderDarkColor: #ffffff;
+  // ArticleCard Icons for share, like, dislike, delete
+  --iconColor: #959aa2;
+  --disabledIconColorLightBG: lighten(var(--959AA2), 30%);
+  --lessImportantInfo: #b2b2b2;
+  --placeholderColor: #817981;
+  --comparisonDarkBlue: #31344c;
+  --comparisonLightGray: #eceef5;
+  --slantText: "Cantarell", sans-serif;
+  --actualAnswerBG: #f6f7fb;
+  --activateColor: #1550d6;
+  --mediumBlue: #959aa2;
+
+  --statsColor: #7b8cb4;
+}

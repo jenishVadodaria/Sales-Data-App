@@ -1,0 +1,150 @@
+@import "../../SCSS/mixins.scss";
+
+.dashboardContainer {
+  min-height: 100vh;
+  width: 100%;
+
+  // @media (max-width: 1210px) {
+  // max-height: auto;
+  // }
+}
+
+.scrollComponent{
+ height: 100vh;
+  overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dashboard {
+  min-height: 100vh;
+  // width: 95%;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 100vh;
+  // overflow: scroll;
+  // @include grid(180px calc(100% - 180px), 100px calc(100% - 100px), 8px);
+  // @include grid(2% auto minmax(0, 1fr) 2%, minmax(0,.5fr) minmax(0, 9.5fr), 8px);
+  // @include grid(2% auto minmax(0, 1fr) 2%, 100px minmax(0, 1fr), 8px);
+  // @include grid(auto, 100px minmax(0, 1fr), 8px);
+  // @include grid(auto, 100px minmax(0, 1fr), 8px);
+  @include grid(minmax(1px, auto) minmax(1px, 1fr), 100px minmax(0, 1fr), 0px);
+  grid-column-gap: 8px;
+  grid-template-areas:
+    "topMenu topMenu"
+    "menu content";
+
+  @media (max-height: 885px) {
+    max-height: 100%;
+  }
+
+  // @media (max-height: 760px) {
+  //   grid-template-columns: minmax(0, 1fr);
+  //   // grid-template-rows: minmax(0, 75px) minmax(0, 75px) minmax(0, 1fr);
+  //   grid-template-rows: minmax(0, 75px) minmax(0, 1fr);
+  //   grid-template-areas:
+  //     "topMenu"
+  //     "content";
+  //   padding-bottom: 0;
+  //   max-height: none;
+  //   margin-bottom: 68px;
+  // }
+
+  @media (max-width: 1210px) {
+    grid-template-columns: minmax(0, 1fr);
+    // grid-template-rows: minmax(0, 75px) minmax(0, 75px) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 75px) minmax(0, 1fr);
+    grid-template-areas:
+      "topMenu"
+      "content";
+    padding-bottom: 0;
+    max-height: none;
+    margin-bottom: 90px;
+  }
+}
+
+.topMenu {
+  grid-area: topMenu;
+  @include center;
+  @media (min-width: 1211px) {
+    font-size: 18px;
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.leftMenu {
+  grid-area: menu;
+  @include center;
+  z-index: $zindex_nav;
+  height: calc(100vh - 100px);
+
+  @media (max-height: 885px) and (min-width: 1211px) {
+    height: 100%;
+  }
+
+  @media (max-width: 1210px) {
+    height: 100vh;
+    margin-left: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    z-index: $zindex_nav;
+  }
+}
+
+.contentArea {
+  // grid-area: content;
+  display: grid !important;
+  @include center;
+  font-size: 32px;
+
+  margin-right: 10px;
+
+  @media (max-width: 1210px) {
+    width: 100%;
+    margin-right: 0px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+}
+
+// // PAGE Z-INDEX TABLE
+
+// // LEVEL 6
+// //  Sensai controls (bottom controls) - highest level
+// --mobile_menu_zindex: 600;
+
+// // LEVEL 5
+// // phone / tablet slide in nav
+// // phone / tablet uploads slide in
+// // phone / tablet search slide in
+// --mobile_menu_slidein_zindex: 500;
+
+// // LEVEL 4
+// // search bar
+// --search_bar_zindex: 401;
+// // search bar filters dropdown selection sub dropdown
+// --search_filters_zindex: 401;
+// // search bar filters background
+// --search_filters_background_zindex: 400;
+// //  quick upload dropdown
+// --quick_upload_zindex: 400;
+
+// // LEVEL 3
+// // risks and opps full dash modal
+// --risk_opp_more_modal_zindex: 300;
+
+// // LEVEL 2
+// // individual dashboard component modals
+// --dashboard_modal_zindex: 200;
+
+// // LEVEL 1
+// // geo cities slide in
+// --top_cities_zindex: 100;
+
+// // LEVEL 0 (base)
+// // dashboard components - at level 0
+// --base_zindex: 0;
+
+// --testing: red;

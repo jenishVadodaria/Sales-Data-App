@@ -1,0 +1,62 @@
+.heading {
+  font-weight: 500;
+}
+.content {
+  border-left: 1px solid rgb(231, 226, 226);
+  border-right: 1px solid rgb(231, 226, 226);
+  border-bottom: 1px solid rgb(231, 226, 226);
+  // border-top: 1px solid gray;
+  // height: 340px;
+  min-height: 340px;
+}
+.curve {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.problems {
+  background-color: #4f77cc;
+}
+
+.painPoints {
+  background-color: #f98600;
+}
+
+.challenges {
+  background-color: #9c179e;
+}
+
+.colorWhite {
+  color: white !important;
+}
+
+.bgProblems {
+  --tw-bg-opacity: 1;
+  background-color: #4f77cc;
+}
+
+.bgPainPoints {
+  --tw-bg-opacity: 1;
+  background-color: #f98600;
+}
+
+.bgChallenges {
+  --tw-bg-opacity: 1;
+  background-color: #9c179e;
+}
+
+.problemBorder {
+  border-bottom: 15px solid #4f77cc !important;
+}
+
+.painPointsBorder {
+  border-bottom: 15px solid #f98600 !important;
+}
+
+.challengesBorder {
+  border-bottom: 15px solid #9c179e !important;
+}
+
+.readMoreColor {
+  color: #2877fd !important;
+}

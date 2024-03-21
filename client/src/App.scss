@@ -1,0 +1,108 @@
+@import "./SCSS/mixins.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap");
+@import "~bootstrap/scss/bootstrap.scss";
+
+html,
+body,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  // overflow-x: hidden;
+  min-height: 100vh;
+  height: max-content;
+  // font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  //   "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  // sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-image: linear-gradient(black, rgb(3, 62, 102));
+}
+
+// ::-webkit-scrollbar {
+//   width: 0px;
+//   background: transparent;
+// }
+
+html,
+body {
+  // font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @include custScrollbars;
+  overflow: initial;
+}
+
+.custom_style {
+  font-size: 100% !important;
+  zoom: 1.5 !important;
+}
+
+// .DraftEditor-root,
+// .DraftEditor-editorContainer,
+// .public-DraftEditor-content {
+//   width: 100%;
+//   min-height: 100%;
+//   flex-grow: 1;
+//   font-size: 0.9rem;
+
+//   height: 500px;
+//   width: 100%;
+//   display: block;
+//   border: solid 1px;
+//   flex-grow: 1;
+// }
+
+// .public-DraftEditor-content {
+//   // width: 100%;
+//   // min-height: 500px;
+//   min-height: 100vh;
+//   // flex-grow: 1;
+//   font-size: 0.9rem;
+// }
+
+button {
+  cursor: pointer;
+}
+
+// GLOBAL STYLES
+* {
+  font-family: var(--nunito);
+}
+
+//carousel-control-next
+.carousel-control-next {
+  right: -70px;
+}
+.carousel-control-prev {
+  left: -70px;
+}
+.carousel-control-next-icon {
+  background-image: url("./assets/img/nextarrow.png");
+}
+.carousel-control-prev-icon {
+  background-image: url("./assets/img/prevarrow.png");
+}
+.carousel-indicators {
+  display: none !important;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  color: #fff;
+  background: linear-gradient(
+    97.2deg,
+    rgba(109, 220, 255, 0.2) 42.63%,
+    rgba(13, 0, 65, 0.2) 100%
+  );
+  border-radius: 100px; /* or add it to the track */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgb(60, 192, 246);
+  border-radius: 100px;
+}

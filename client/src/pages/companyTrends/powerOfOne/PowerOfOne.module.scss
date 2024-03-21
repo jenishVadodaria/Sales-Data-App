@@ -1,0 +1,53 @@
+.tableTypo {
+    font-size: 16px;
+
+    > :not(caption) > * {
+        > * {
+            border: 1px solid #DBE5F0;
+        }
+
+        > th {
+            padding: 16px 20px !important;
+        }
+
+        > td {
+            padding: .5rem 20px !important;
+        }
+    }
+}
+
+.primaryHeader {
+    th {
+        font-size: 18px;
+        color: #fff;
+        background-color:#4F77CC !important;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+.secondaryHeader {
+    th {
+        color:#4F77CC;
+        padding: 15px !important;
+        text-align: center;
+        font-weight: 600;
+        line-height: 20px;
+        font-size: 17px;
+    }
+}
+
+.tertiaryHeader{
+    background-color: #F1F4F6 !important;
+    text-transform: uppercase;
+    > tr > * {font-weight: 700;}
+}
+
+.numberInputContainer {
+    gap: 4px;
+
+    > input {
+        max-width: 60px;
+        text-align: center;
+    }
+}

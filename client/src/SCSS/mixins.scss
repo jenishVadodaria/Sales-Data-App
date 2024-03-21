@@ -1,0 +1,255 @@
+@import "./zindex";
+@import "./variables";
+
+// MEDIA QUERIES
+@mixin media1425 {
+  @media (max-width: 1425px) {
+    @content;
+  }
+}
+
+@mixin media1314 {
+  @media (max-width: 1314px) {
+    @content;
+  }
+}
+
+@mixin media1210 {
+  @media (max-width: 1210px) {
+    @content;
+  }
+}
+
+@mixin media1200 {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media1011 {
+  @media (max-width: 1011px) {
+    @content;
+  }
+}
+
+@mixin media992 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media991 {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin media975 {
+  @media (max-width: 975px) {
+    @content;
+  }
+}
+
+@mixin media960 {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin media865 {
+  @media (max-width: 865px) {
+    @content;
+  }
+}
+
+@mixin media800 {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin media769 {
+  @media (max-width: 769px) {
+    @content;
+  }
+}
+
+@mixin media768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media711 {
+  @media (max-width: 711px) {
+    @content;
+  }
+}
+
+@mixin media605 {
+  @media (max-width: 605px) {
+    @content;
+  }
+}
+
+@mixin media592 {
+  @media (max-width: 592px) {
+    @content;
+  }
+}
+
+@mixin media526 {
+  @media (max-width: 526px) {
+    @content;
+  }
+}
+
+@mixin media500 {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media450 {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+//CENTER WITH FLEXBOX
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// GIVE IT JUSTIFY-CONTENT AND ALIGN-ITEMS TO GO
+
+@mixin custom-layout($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin grid($gtc, $gtr, $gg) {
+  display: grid;
+  grid-template-columns: $gtc;
+  grid-template-rows: $gtr;
+  grid-gap: $gg;
+}
+
+// ============ Scrollbars ============ //
+@mixin custScrollbars() {
+  // for mozilla
+  scrollbar-width: thin;
+  // for chrome and chromium based browsers (edge, brave, etc)
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    width: 6px;
+    background-color: lightgray;
+    border-radius: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 6px;
+    background-color: slategray;
+    border-radius: 6px;
+  }
+}
+
+// TODO: add this to a library of some sort, it's going to get used quite a bit
+// ============ TOOL TIPS ============ //
+.tooltipTop .tooltiptext,
+.tooltipRight .tooltiptext,
+.tooltipBottom .tooltiptext,
+.tooltipLeft .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: #323232;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: $zindex_component_overlay;
+  font-size: 14px;
+}
+.tooltipLeft .tooltiptext {
+  right: 100%;
+}
+
+.tooltipLeft .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #323232;
+}
+.tooltipRight .tooltiptext {
+  left: 100%;
+}
+.tooltipRight .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #323232 transparent transparent;
+}
+
+.tooltipLeft:hover .tooltiptext,
+.tooltipRight:hover .tooltiptext,
+.tooltipBottom:hover .tooltiptext,
+.tooltipLeft:hover .tooltiptext {
+  visibility: visible;
+}
+
+// ============ END TOOL TIPS ============ //
+
+// For Dashboard modals
+@mixin mobileModalBodyMixin() {
+  // for mozilla
+  @media (max-width: 1210px) {
+    width: 66%;
+    height: max-content;
+    border-radius: $border-radius;
+    background: var(--BGDarkNoOpacity);
+    padding: 15px;
+    padding-right: 0px;
+    max-height: 75%;
+    @include custScrollbars();
+  }
+}
+
+// fill out jon p
+@mixin mobileModalContentMixin() {
+  grid-area: content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: auto;
+  padding: 25px;
+  @include media1210 {
+    max-height: 70vh;
+  }
+  @include custScrollbars;
+}
+
+// h1 on each page
+@mixin title() {
+  font-size: 1.13rem;
+
+  padding: 0px;
+  font-family: var(--nunito);
+  font-weight: 700;
+  color: var(--title);
+  text-transform: uppercase;
+}

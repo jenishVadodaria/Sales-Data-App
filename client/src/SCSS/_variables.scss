@@ -1,0 +1,14 @@
+$dash-subHeading-fontSize: 18px !important;
+@media (max-width: 1240px) {
+  $dash-subHeading-fontSize: 16px !important;
+}
+@media (max-width: 626px) {
+  $dash-subHeading-fontSize: 14px !important;
+}
+@media (max-width: 600px) {
+  $dash-subHeading-fontSize: 12px !important;
+}
+$border-radius: 12px;
+$box-shadow: 1px 1px 3px #323232, -1px 1px 3px #323232;
+
+// non dynamic variables

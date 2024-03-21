@@ -1,0 +1,29 @@
+.card {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 24px 0px #150b7414;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.cardHeader {
+  border-bottom: 1px solid #e5e5ef;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  font-weight: bold;
+  font-size: 22px;
+  color: #1e1b39;
+}
+.card2 {
+  border-radius: 24px;
+}

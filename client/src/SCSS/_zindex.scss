@@ -1,0 +1,35 @@
+// PAGE Z-INDEX TABLE
+
+// LEVEL 5
+// Beats everything else.  It is a whole page z-index
+$zindex_fullscreen_modal: 500;
+
+// LEVEL 4
+// Top Menu (should always go over page content and nav stuff)
+// Mobile bottom menu (should always go over page content and nav stuff)
+
+$zindex_menuPlusOne: 401;
+$zindex_menu: 400;
+$zindex_menuMinusOne: 399;
+
+// LEVEL 3
+// Navigation (should always go over page content)
+
+$zindex_navPlusOne: 301;
+$zindex_nav: 300;
+$zindex_navMinusOne: 299;
+
+// LEVEL 2
+// dashboard component modals
+$zindex_page_overlayPlusOne: 201;
+$zindex_page_overlay: 200;
+$zindex_page_overlayMinusOne: 199;
+
+// LEVEL 1
+$zindex_component_overlayPlusOne: 101;
+$zindex_component_overlay: 100;
+$zindex_component_overlayMinusOne: 99;
+
+// LEVEL 0 (base)
+// example: dashboard components - at level 0
+$zindexBase: 0;

@@ -1,0 +1,895 @@
+#hero-section {
+    margin: 0px;
+    height: 100%;
+    position: relative;
+}
+
+/*  
+  #hero-section .animation {
+      position: relative;
+  }  */
+
+#hero-section .ball-container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #6832a3 0%, #350e5f 100%);
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+}
+
+#hero-section .ball1 {
+    width: 430px;
+    height: 430px;
+    background: linear-gradient(90deg,
+            #d45bd0 0%,
+            #8900ff 0.01%,
+            #ff334f 55%,
+            #ff4e00 100%);
+    position: relative;
+    animation-name: example1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes example1 {
+    0% {
+        left: -100px;
+        top: -50px;
+    }
+
+    25% {
+        left: 1000px;
+        top: 100px;
+    }
+
+    50% {
+        left: 900px;
+        top: 400px;
+    }
+
+    75% {
+        left: -100px;
+        top: 300px;
+    }
+
+    100% {
+        left: -100px;
+        top: -50px;
+    }
+}
+
+#hero-section .ball2 {
+    width: 430px;
+    height: 430px;
+    background: #cf81ff;
+    position: relative;
+    animation-name: example2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes example2 {
+    0% {
+        left: 900px;
+        top: -200px;
+    }
+
+    25% {
+        left: 900px;
+        top: 0px;
+    }
+
+    50% {
+        left: 0px;
+        top: 0px;
+    }
+
+    75% {
+        left: 0px;
+        top: -300px;
+    }
+
+    100% {
+        left: 900px;
+        top: -200px;
+    }
+}
+
+#hero-section .ball3 {
+    width: 430px;
+    height: 430px;
+    background: linear-gradient(90deg,
+            #d45bd0 0%,
+            #8900ff 0.01%,
+            #ff334f 55%,
+            #ff4e00 100%);
+    position: relative;
+    animation-name: example3;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes example3 {
+    0% {
+        left: 540px;
+        top: -800px;
+    }
+
+    25% {
+        left: 200px;
+        top: -800px;
+    }
+
+    50% {
+        left: 200px;
+        top: -400px;
+    }
+
+    75% {
+        left: 940px;
+        top: -400px;
+    }
+
+    100% {
+        left: 540px;
+        top: -800px;
+    }
+}
+
+#hero-section .ball4 {
+    width: 430px;
+    height: 430px;
+    background: #cf81ff;
+    position: relative;
+    animation-name: example4;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes example4 {
+    0% {
+        left: 440px;
+        top: -1070px;
+    }
+
+    25% {
+        left: 440px;
+        top: -1070px;
+    }
+
+    50% {
+        left: 300px;
+        top: -500px;
+    }
+
+    75% {
+        left: 300px;
+        top: -500px;
+    }
+
+    100% {
+        left: 440px;
+        top: -1070px;
+    }
+}
+
+#hero-section .blue-img {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(150px);
+    -webkit-backdrop-filter: blur(150px);
+    position: absolute;
+}
+
+#hero-section .grain-img {
+    background: url(./bg-grain.webp);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0.3;
+    position: absolute;
+}
+
+#hero-section .main-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: #fff;
+}
+
+#hero-section .container {
+    position: inherit;
+}
+
+#hero-section .map-image {
+    height: 100%;
+    width: 100%;
+}
+
+#hero-section .join-button {
+    border-radius: 2rem;
+    background-color: white;
+    padding: 0.5rem 2rem;
+    color: #350e5f;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* tablet screen */
+
+@media (max-width: 768px) {
+
+    /* #hero-section .map-image {
+      display: none;
+    } */
+    #hero-section .main-content {
+        flex-direction: column;
+    }
+
+    #hero-section .ball1 {
+        width: 290px;
+        height: 290px;
+        background: linear-gradient(90deg,
+                #d45bd0 0%,
+                #8900ff 0.01%,
+                #ff334f 55%,
+                #ff4e00 100%);
+        position: relative;
+        animation-name: example1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example1 {
+        0% {
+            left: -100px;
+            top: -50px;
+        }
+
+        25% {
+            left: 900px;
+            top: 100px;
+        }
+
+        50% {
+            left: 900px;
+            top: 400px;
+        }
+
+        75% {
+            left: -100px;
+            top: 300px;
+        }
+
+        100% {
+            left: -100px;
+            top: -50px;
+        }
+    }
+
+    #hero-section .ball2 {
+        width: 290px;
+        height: 290px;
+        background: #cf81ff;
+        position: relative;
+        animation-name: example2;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example2 {
+        0% {
+            left: 900px;
+            top: -200px;
+        }
+
+        25% {
+            left: 900px;
+            top: 0px;
+        }
+
+        50% {
+            left: 0px;
+            top: 0px;
+        }
+
+        75% {
+            left: 0px;
+            top: -300px;
+        }
+
+        100% {
+            left: 900px;
+            top: -200px;
+        }
+    }
+
+    #hero-section .ball3 {
+        width: 290px;
+        height: 290px;
+        background: linear-gradient(90deg,
+                #d45bd0 0%,
+                #8900ff 0.01%,
+                #ff334f 55%,
+                #ff4e00 100%);
+        position: relative;
+        animation-name: example3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example3 {
+        0% {
+            left: 540px;
+            top: -800px;
+        }
+
+        25% {
+            left: 200px;
+            top: -800px;
+        }
+
+        50% {
+            left: 200px;
+            top: -400px;
+        }
+
+        75% {
+            left: 940px;
+            top: -400px;
+        }
+
+        100% {
+            left: 540px;
+            top: -800px;
+        }
+    }
+
+    #hero-section .ball4 {
+        width: 290px;
+        height: 290px;
+        background: #cf81ff;
+        position: relative;
+        animation-name: example4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example4 {
+        0% {
+            left: 440px;
+            top: -1070px;
+        }
+
+        25% {
+            left: 440px;
+            top: -1070px;
+        }
+
+        50% {
+            left: 300px;
+            top: -500px;
+        }
+
+        75% {
+            left: 300px;
+            top: -500px;
+        }
+
+        100% {
+            left: 440px;
+            top: -1070px;
+        }
+    }
+
+    #hero-section .left-text {
+        padding-top: 2rem;
+        text-align: center;
+    }
+
+    #hero-section .section-heading {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #hero-section .section-heading .gradient_text {
+        display: block;
+    }
+
+    #hero-section .sub-title {
+        display: none;
+    }
+
+    #hero-section .apply-button {
+        font-family: "Metropolis";
+        /* margin: 2.5rem 0rem 0rem 7rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* mobile screen */
+
+@media (max-width: 576px) {
+
+    /* #hero-section .map-image {
+          display: none;
+      } */
+    #hero-section .main-content {
+        flex-direction: column;
+    }
+
+    #hero-section .ball1 {
+        width: 230px;
+        height: 230px;
+        background: linear-gradient(90deg,
+                #d45bd0 0%,
+                #8900ff 0.01%,
+                #ff334f 55%,
+                #ff4e00 100%);
+        position: relative;
+        animation-name: example1;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example1 {
+        0% {
+            left: -100px;
+            top: -50px;
+        }
+
+        25% {
+            left: 1000px;
+            top: 100px;
+        }
+
+        50% {
+            left: 900px;
+            top: 400px;
+        }
+
+        75% {
+            left: -100px;
+            top: 300px;
+        }
+
+        100% {
+            left: -100px;
+            top: -50px;
+        }
+    }
+
+    #hero-section .ball2 {
+        width: 230px;
+        height: 230px;
+        background: #cf81ff;
+        position: relative;
+        animation-name: example2;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example2 {
+        0% {
+            left: 900px;
+            top: -200px;
+        }
+
+        25% {
+            left: 900px;
+            top: 0px;
+        }
+
+        50% {
+            left: 0px;
+            top: 0px;
+        }
+
+        75% {
+            left: 0px;
+            top: -300px;
+        }
+
+        100% {
+            left: 900px;
+            top: -200px;
+        }
+    }
+
+    #hero-section .ball3 {
+        width: 230px;
+        height: 230px;
+        background: linear-gradient(90deg,
+                #d45bd0 0%,
+                #8900ff 0.01%,
+                #ff334f 55%,
+                #ff4e00 100%);
+        position: relative;
+        animation-name: example3;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example3 {
+        0% {
+            left: 540px;
+            top: -800px;
+        }
+
+        25% {
+            left: 200px;
+            top: -800px;
+        }
+
+        50% {
+            left: 200px;
+            top: -400px;
+        }
+
+        75% {
+            left: 940px;
+            top: -400px;
+        }
+
+        100% {
+            left: 540px;
+            top: -800px;
+        }
+    }
+
+    #hero-section .ball4 {
+        width: 230px;
+        height: 230px;
+        background: #cf81ff;
+        position: relative;
+        animation-name: example4;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+    }
+
+    @keyframes example4 {
+        0% {
+            left: 440px;
+            top: -1070px;
+        }
+
+        25% {
+            left: 440px;
+            top: -1070px;
+        }
+
+        50% {
+            left: 300px;
+            top: -500px;
+        }
+
+        75% {
+            left: 300px;
+            top: -500px;
+        }
+
+        100% {
+            left: 440px;
+            top: -1070px;
+        }
+    }
+
+    #hero-section .heading-text {
+        margin: 0px 0px;
+        line-height: 127.5%;
+        text-align: center;
+    }
+
+    #hero-section .heading-text h1 {
+        margin: 0px 0px 5px 0px;
+        font-size: 49px;
+        font-weight: 900;
+    }
+
+    #hero-section .sub-title {
+        display: none;
+    }
+
+    #hero-section .apply-button {
+        font-family: "Metropolis";
+        /* margin: 2.5rem 0rem 0rem 7rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Login css */
+
+
+#login .login-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* grid-template-columns: 2fr 1fr; */
+}
+
+#login .login-form {
+    max-width: 400px !important;
+    width: 100%;
+}
+
+/* #login .login-container-right {
+    width: 100%;
+} */
+
+#login .logo {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+#login .section-heading {
+    font-size: 2.5rem;
+}
+
+#login a {
+    color: inherit !important;
+}
+
+#login a:hover {
+    color: inherit !important;
+}
+
+@media screen and (max-width: 768px) {
+    #login .login-container {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #login .login-form {
+        max-width: 100%;
+    }
+
+    #login .login-container-left {
+        display: none;
+    }
+}
+
+
+
+
+/* app css */
+
+
+:root {
+    --color-primary: #19082c;
+    --color-secondary: #350e5f;
+    --color-accent: #f5f5f5;
+    --main-bg: #ffffff;
+    --second-bg: #fafafb;
+    --txt-color: #455560;
+    --txt-white: #fff;
+    --main-color: #19082c;
+    --second-color: #350e5f;
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-light: #ffffff;
+    --second-bg-light: #fafafb;
+    --txt-color-light: #455560;
+    --box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    --main-bg-dark: #2d2d2d;
+    --second-bg-dark: #202020;
+    --txt-color-dark: #bbbbbb;
+    --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+    --main-color-blue: #349eff;
+    --second-color-blue: #62b4ff;
+
+    --main-color-red: #fb0b12;
+    --second-color-red: #ff4a6b;
+
+    --main-color-cyan: #10d4d2;
+    --second-color-cyan: #2ae9e6;
+
+    --main-color-green: #019707;
+    --second-color-green: #4caf50;
+
+    --main-color-orange: #d68102;
+    --second-color-orange: #fca11a;
+
+    --sidebar-width: 300px;
+    --border-radius: 15px;
+    --topnav-height: 110px;
+    --transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Metropolis', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* line-height: 1.5; */
+    background: #f7f7f7;
+    font-size: 16px;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    color: var(--txt-color);
+}
+
+input {
+    border: 2px solid transparent;
+    outline: 0;
+}
+
+/* input:focus {
+  border: 2px solid var(--main-color);
+} */
+
+
+
+.card {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: var(--main-bg);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.card.full-height {
+    height: calc(100% - 30px);
+}
+
+.card__header {
+    text-transform: capitalize;
+}
+
+.card>div~div {
+    margin-top: 30px;
+}
+
+.card__footer {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.light-background {
+    background-color: var(--main-bg-light);
+    color: #000;
+}
+
+.dark-background {
+    background-color: var(--main-bg-dark);
+    color: #fff;
+}
+
+.blue-color {
+    background-color: var(--main-color-blue);
+    color: #fff;
+}
+
+.red-color {
+    background-color: var(--main-color-red);
+    color: #fff;
+}
+
+.cyan-color {
+    background-color: var(--main-color-cyan);
+    color: #fff;
+}
+
+.green-color {
+    background-color: var(--main-color-green);
+    color: #fff;
+}
+
+.orange-color {
+    background-color: var(--main-color-orange);
+    color: #fff;
+}
+
+.weight-bold {
+    font-weight: bold;
+}
+
+.mw-100 {
+    max-width: 100%;
+}
+
+
+
+
+
+
+.forgot-password,
+.forgot-password a {
+    text-align: right;
+    font-size: 13px;
+    padding-top: 10px;
+    color: #7f7d7d;
+    margin: 0;
+}
+
+.forgot-password a {
+    color: #167bff;
+}
+
+.btn {
+    font-size: 16px;
+    border-radius: 8px 8px 8px 8px;
+    padding: 16px 40px 16px 40px;
+}
+
+.btn-sm {
+    font-size: 14px;
+    border-radius: 8px 8px 8px 8px;
+    padding: 10px 20px 10px 20px;
+}
+
+.btn.btn-primary {
+    fill: #ffffff;
+    color: #ffffff !important;
+    background-color: #350e5f;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #350e5f;
+}
+
+
+.black-color {
+    color: #000;
+}
+
+.radio-label {
+    margin-right: 1.5rem;
+}
