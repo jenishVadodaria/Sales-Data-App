@@ -110,7 +110,7 @@ export const UserList: React.FC = () => {
   //         config: {
   //           headers: {
   //             Authorization:
-  //               "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDg0NWQyNDZjODFkZDRlNTMzOTQwMTQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODcyNDgyNjcsImV4cCI6MTY4NzI1MTg2N30.ULBvqicyjSsTNSW8OzuvNKz0lSwu_YKvi0ltGmZLG8s",
+  //               "Bearer UserId",
   //           },
   //           data: {
   //             _id: id,
