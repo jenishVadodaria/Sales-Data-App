@@ -5,7 +5,7 @@
 This project will consist of three main parts:
 
 - A User Portal built using React
-- An Admin Portal also built using React
+- An Admin Portal also built using Refine-React
 - Backend Services built using NestJS
 
 The portals will be responsible for displaying data to the users and admin respectively, while the backend will manage the business logic and data storage.
